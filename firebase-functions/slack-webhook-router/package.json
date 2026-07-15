@@ -10,7 +10,9 @@
     "dev": "npm run start",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
-    "deploy": "./deploy.sh"
+    "deploy": "./deploy.sh",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm",
+    "dependencies": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "author": "Dust",
   "license": "ISC",

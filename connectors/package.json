@@ -14,7 +14,9 @@
     "tsc": "tsc",
     "cli": "npx tsx src/admin/cli.ts",
     "initdb": "./admin/init_db.sh",
-    "create-db-migration": "./create_db_migration_file.sh"
+    "create-db-migration": "./create_db_migration_file.sh",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm",
+    "dependencies": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "dependencies": {
     "@dust-tt/client": "file:../sdks/js",

@@ -22,7 +22,9 @@
     "prepare": "cd .. && husky .husky",
     "debug:profiler": "tsx ./scripts/debug/run_profiler.ts",
     "sitemap": "next-sitemap",
-    "sparkle:dev": "./admin/sparkle_dev.sh"
+    "sparkle:dev": "./admin/sparkle_dev.sh",
+    "postinstall": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm",
+    "dependencies": "npx @socketsecurity/socket-patch apply --silent --ecosystems npm"
   },
   "dependencies": {
     "@datadog/browser-logs": "^6.13.0",
